@@ -39,7 +39,7 @@ public class UserDao {
 			Class.forName("com.mysql.jdbc.Driver").newInstance();
 			Connection connect = DriverManager
 			          .getConnection("jdbc:mysql://localhost:3306/bookstore?"
-				              + "user=root&password=parth55");
+				              + "user=root&password=Waynestate2017");
 		    String sql = "select * from tb_user where username=?";
 		    PreparedStatement preparestatement = connect.prepareStatement(sql); 
 		    preparestatement.setString(1,username);
@@ -77,7 +77,7 @@ public class UserDao {
 			Class.forName("com.mysql.jdbc.Driver").newInstance();
 			Connection connect = DriverManager
 			          .getConnection("jdbc:mysql://localhost:3306/bookstore?"
-				              + "user=root&password=parth55");
+				              + "user=root&password=Waynestate2017");
 			
 			
 			String sql = "insert into tb_user values(?,?,?)";
@@ -98,7 +98,7 @@ public class UserDao {
 			Class.forName("com.mysql.jdbc.Driver").newInstance();
 			Connection connect = DriverManager
 			          .getConnection("jdbc:mysql://localhost:3306/bookstore?"
-				              + "user=root&password=parth55");
+				              + "user=root&password=Waynestate2017");
 			
 			
 			String sql = "select * from tb_user";

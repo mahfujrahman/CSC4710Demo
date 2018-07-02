@@ -51,7 +51,7 @@ public class initDB extends HttpServlet {
 		      // Setup the connection with the DB
 		      connect = DriverManager
 		          .getConnection("jdbc:mysql://localhost:3306/sampledb?"
-		              + "user=root&password=parth55");
+		              + "user=root&password=Waynestate2017");
 
 		        
 

@@ -26,17 +26,26 @@
     
     <c:choose>
 		<c:when test="${empty sessionScope.session_user }">
-				<h1>PC Member Delete Page</h1>
+				<h1>Report Insert Page</h1>
 		</c:when>
 		<c:otherwise>
 
 		
-		<form action="<c:url value='/insertpaper'/>" method="post">
-		<label>PaperID: </label>
+		<form action="<c:url value='/insertreport'/>" method="post">
+		<label>Date: </label>
+		<input type="text" name="date0" value=""/>
+		<label>Comment:</label>
+		<input type="text" name="comment0" value=""/>
+		<label>Recommendation:</label>
+		<input type="text" name="rec0" value=""/>
+		<label>Paperid:</label>
 		<input type="text" name="paperid0" value=""/>
+		<label>Email:</label>
+		<input type="text" name="email0" value=""/>
 		<br>
 		<br>
-		<input type="submit" name="delete" value="Delete"/>
+		<br>
+		<input type="submit" name="insert" value="Insert"/>
 		</form>
 		
 		<br>
